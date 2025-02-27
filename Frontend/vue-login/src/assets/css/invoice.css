@@ -1,0 +1,120 @@
+.invoice-container {
+  display: flex;
+  gap: 2.5vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 159vh;
+  height: 90vh;
+}
+
+.invoice-data-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-top: 8vh;
+}
+
+.data-container {
+  width: 20vh;
+  height: 12vh;
+  border: 0.33vh solid black;
+  font-weight: bold;
+  border-radius: 1.11vh;
+  padding-top: 0;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.data-container h2 {
+  margin-top: 0;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 0.77vh 0.77vh 0 0;
+  border-bottom: 0.33vh solid black;
+}
+
+.data-container,
+p {
+  font-size: 1.5vh;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+.data-container:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.table-container {
+  width: 90%;
+  height: 16vh;
+  margin-top: -2.22vh;
+  padding: 0;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+  align-items: stretch;
+  align-content: stretch;
+  margin-bottom: -0.3vh;
+  width: 88%;
+  margin-top: 5.50vh;
+}
+
+.buttons-container div {
+  padding: 0.50vh 0.50vh 0vh 0.50vh;
+  margin: 0;
+  text-align: center;
+  border-radius: 0.55vh 0.55vh 0px 0px;
+}
+
+.button-add {
+  font-size: 1.5vh;
+  font-weight: bold;
+  border: 0.22vh solid #99d6ff;
+  background-color: #99d6ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-add:hover {
+  border: 0.22vh solid black;
+}
+
+.button-export {
+  font-size: 1.5vh;
+  font-weight: bold;
+  border: 0.22vh solid #99ff99;
+  background-color: #99ff99;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-export:hover {
+  border: 0.22vh solid black;
+}
+
+.button-update {
+  font-size: 2vh;
+  color: white;
+  border: 0.22vh solid black;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-update:hover {
+  border: 0.22vh solid black;
+  color: black;
+  background-color: white;
+}

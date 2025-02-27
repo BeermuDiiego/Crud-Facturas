@@ -1,0 +1,289 @@
+.form-invoice-container {
+  width: 110vh;
+  min-height: 65vh;
+  max-height: 85vh;
+  padding: 1vh;
+  padding-bottom: 0vh;
+  border: 0.33vh solid black;
+  border-radius: 1vh;
+  background-color: #fefefa;
+  position: relative;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.form-invoice-container h1{
+  font-size: 4.5vh;
+  margin: 2vh 0 1vh 0;
+}
+
+.form-invoice-container h2 {
+  font-size: 3vh;
+  margin: 0 0 0 1vh;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.data-container h2 {
+  text-align: left;
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.client-data {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  text-align: right;
+  float: right;
+  width: 50%;
+  margin: 0;
+}
+
+.invoice-data {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  text-align: right;
+  float: right;
+  width: 50%;
+  margin: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  background: transparent;
+  border: none;
+  font-size: 2vh;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.table-form-container {
+  max-width: 100%;
+  max-height: 15.1vh;
+  margin: 1vh 0 1vh 0;
+  padding: 0vh;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 2.5vh;
+}
+
+.table-form-container input{
+  font-size: 2vh;
+  height: 3vh;
+}
+.table-form-container textarea{
+  font-size: 2vh;
+  height: 5vh;
+  padding: 0vh;
+  margin: 0vh;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table th,
+.form-table td {
+  border: 0.11vh solid #ddd;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+.form-table th {
+  background-color: #f2f2f2;
+  padding: 0vh;
+  
+}
+
+.form-table input {
+  width: 100%;
+  padding: 0.55vh;
+  box-sizing: border-box;
+}
+
+.save-button {
+  padding: 1vh 2vh;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.55vh;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.totals-container {
+  display: flex;
+  gap: 1.5vh;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-top: 0;
+}
+
+#checkbox  {
+  height: 2vh;
+  width: 2vh;
+  margin: 0 0.5vh 0 0 ;
+}
+
+.totals-container label {
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2vh;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 0vh;
+  border-top: 0.11vh solid black;
+  padding: 0.5vh 0 0.5vh 0;
+  margin-bottom: 0vh;
+}
+
+.button-save {
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 0.7vh;
+  border: 0.22vh solid black;
+  border-radius: 1vh;
+  background-color: #85e085;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-save:hover {
+  color: white;
+  border-color: #85e085;
+}
+
+.button-cancel {
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 0.7vh;
+  border: 0.22vh solid black;
+  border-radius: 1vh;
+  background-color: #ff5c33;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-cancel:hover {
+  color: white;
+  border-color: #ff5c33;
+}
+
+.button-delete {
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 0.3vh;
+  margin: 0;
+  border: 0.22vh solid red;
+  border-radius: 0.5vh;
+  background-color: red;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-add {
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 0.5vh;
+  margin: 0;
+  border: 0.22vh solid #80ccff;
+  border-radius: 1vh;
+  background-color: #80ccff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-add:hover {
+  border: 0.22vh solid black;
+  color: white;
+}
+
+.button-delete:hover {
+  border: 0.22vh solid black;
+  color: white;
+}
+
+input[type="date"] {
+  width: 50%;
+  height: 3vh;
+  font-size: 2.5vh;
+  border: 0.11vh solid #ddd;
+  border-radius: 0.55vh;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 3vh;
+  font-size: 2.5vh;
+  border: 0.11vh solid #ddd;
+  border-radius: 0.55vh;
+  box-sizing: border-box;
+}
+
+select {
+  width: 60%;
+  height: 3vh;
+  font-size: 2.5vh;
+  border: 0.11vh solid #ddd;
+  border-radius: 0.55vh;
+  box-sizing: border-box;
+}
+
+.input-iva {
+  width: 6vh;
+  height: 3vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+  border: 0.11vh solid #ddd;
+  border-radius: 0.55vh;
+  box-sizing: border-box;
+}

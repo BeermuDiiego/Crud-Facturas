@@ -1,0 +1,144 @@
+.menu-container {
+  width: 180vh;
+  max-width: 180vh;
+  min-width: 160vh;
+  height: 90vh;
+  max-height: 90vh;
+  min-height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #fefefa;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #b0c4de;
+}
+
+.sidebar h2 {
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: 2.8vh;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 1;
+  flex-grow: 1;
+}
+
+.sidebar-menu a {
+  padding: 20px 0;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: 1.7vh;
+  text-align: left;
+  padding-left: 10px;
+  margin: 0;
+}
+.sidebar-menu hr {
+  border: 0;
+  border-top: 2px solid #dcdcdc;
+  margin: 0;
+}
+
+.sidebar-menu a:hover {
+  background-color: #4682b4;
+  color: white;
+  border-right: 6px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sidebar-foot {
+  padding: 0px;
+  margin: 0;
+  text-align: left;
+  border-top: 2px solid #dcdcdc;
+  background-color: #a2bad9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 1;
+}
+
+.sidebar-foot-business {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: 1;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.sidebar-foot-business div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 1;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+}
+
+.sidebar-foot-business div a {
+  font-size: 1.7vh;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.sidebar-foot-business div p {
+  font-size: 1.5vh;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.sidebar-foot button {
+  background-color: #80a1cb;
+  text-align: center;
+  font-size: 2vh;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 5vh;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sidebar-foot button:hover {
+  background-color: #6e93c4;
+}
+
+.sidebar-foot-submenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 1;
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-foot-submenu a {
+  padding: 10px 0;
+  margin: 0;
+  word-wrap: break-word;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+  border-top: 1px solid gray;
+  font-size: 1.5vh;
+  background-color: #a9bad0;
+}
+
+.sidebar-foot-submenu a:hover {
+  background-color: #4682b4;
+  color: white;
+  border-right: 6px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+}

@@ -1,0 +1,148 @@
+.select-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f8ff;
+  height: 100vh;
+  padding: 20px;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.business-container {
+  width: 80%;
+  max-width: 1200px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #fefefa;
+  overflow: hidden;
+  position: relative;
+}
+
+.business-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.business-card {
+  width: 150px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+  transform: scale(1.1);
+}
+
+.business-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.business-name {
+  font-weight: bold;
+  color: #333;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.no-business {
+  text-align: center;
+  font-size: 18px;
+  color: #ff0000;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffa07a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e9967a;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #007bff;
+}
+a:hover {
+  color: #005cbf;
+}
+
+#buttons-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 5px;
+  background-color: #fefefa;
+}
+
+#buttons-bottom-container p {
+  font-weight: bold;
+  text-align: right;
+  margin: 10px 30px;
+}
+
+.buttons-top-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 5px;
+  background-color: #fefefa;
+}
+
+.buttons-top-container p {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  font-weight: bold;
+  text-align: right;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+
+.buttons-top-container #button-delete {
+  background-color: #ff4d4d;
+}
+
+.buttons-top-container #button-edit {
+  background-color: #80b3ff;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "vue-login",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ag-grid-community/core": "^32.3.3",
+    "ag-grid-community": "^33.0.2",
+    "ag-grid-enterprise": "^33.0.3",
+    "ag-grid-vue3": "^33.0.2",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.6",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "sweetalert2": "^11.15.10",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.10"
+  }
+}
